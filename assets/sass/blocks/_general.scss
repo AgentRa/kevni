@@ -1,0 +1,129 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+
+  @media (min-width: 1300px) {
+    max-width: 1240px;
+  }
+}
+
+.cards {
+
+  .card {
+    color: $white-color;
+    height: 340px;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 10px;
+
+    @media (max-width: $screen-767) {
+      height: 220px;
+    }
+
+    &-big {
+      height: 680px;
+
+      @media (max-width: $screen-991) {
+        height: 340px;
+      }
+
+      @media (max-width: $screen-767) {
+        height: 220px;
+      }
+    }
+
+    .content {
+      color: $white-color;
+      text-decoration: none;
+      background-size: 110%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 80px 20px 30px 20px;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      transition: $fast-transition;
+
+      &:hover {
+        background-size: 130%;
+
+        .bg {
+          transform: scale(1.1);
+        }
+
+        .arrow {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: $screen-767) {
+        padding: 60px 20px 20px 20px;
+      }
+
+      .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        transition: $med-transition;
+      }
+
+      h3 {
+        position: relative;
+      }
+    }
+
+    .f-n-16 {
+      position: absolute;
+      top: 30px;
+      left: 20px;
+    }
+
+    .price {
+      position: absolute;
+      bottom: 30px;
+      left: 20px;
+      display: flex;
+      align-items: flex-end;
+
+      .from {
+        font: bold 24px/1 $montserrat;
+        margin-bottom: 3px;
+        margin-right: 3px;
+      }
+
+      .num {
+        font: bold 38px/1 $montserrat;
+        margin-right: 10px;
+      }
+
+      .text {
+        opacity: 0.5;
+        margin-bottom: 3px;
+        font: bold 14px/1 $montserrat;
+
+        span {
+          font: bold 19px/1 $montserrat;
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      opacity: 0;
+      transition: $fast-transition;
+      //transition-delay: 0.3s;
+    }
+  }
+}

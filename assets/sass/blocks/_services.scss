@@ -1,0 +1,142 @@
+.kevni-services {
+
+  .container {
+    padding: 60px 15px;
+
+    @media (max-width: $screen-1199) {
+      padding: 40px 15px;
+    }
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 60px 0 30px;
+
+      @media (max-width: $screen-1199) {
+        margin: 30px 0;
+      }
+
+      @media (max-width: $screen-767) {
+        margin: 20px 0;
+      }
+    }
+
+    .offset-md-2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 60px;
+
+      @media (max-width: $screen-991) {
+        flex-direction: column;
+      }
+
+      .item {
+        cursor: pointer;
+        width: 340px;
+        height: 340px;
+        padding: 50px 40px;
+        text-align: center;
+        border: 1px solid rgba(160, 255, 240, 0.6);
+        transition: $fast-transition;
+
+        &:hover {
+          background-color: $dark-2-color;
+          border-color: $dark-2-color;
+
+          h3, p {
+            color: $white-color;
+          }
+        }
+
+        @media (max-width: $screen-991) {
+          width: 100%;
+          height: auto;
+          padding: 30px;
+        }
+
+        .image {
+          height: 55px;
+          margin-bottom: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            max-height: 100%;
+          }
+        }
+
+        h3 {
+          margin-bottom: 30px;
+          color: $dark-1-color;
+        }
+
+        p {
+          margin: 0;
+          color: $dark-1-color;
+        }
+      }
+    }
+
+    .cards {
+      margin-bottom: 50px;
+
+      @media (max-width: $screen-991) {
+        margin-bottom: 20px;
+      }
+
+      .card-1 .content .bg {
+        background-image: url('../img/services/kevni-services-card-1.png');
+      }
+
+      .card-2 .content .bg {
+        background-image: url('../img/services/kevni-services-card-2.png');
+      }
+
+      .card-3 .content .bg {
+        background-image: url('../img/services/kevni-services-card-3.png');
+      }
+
+      .card-4 .content .bg {
+        background-image: url('../img/services/kevni-services-card-4.png');
+      }
+
+      .card-5 .content .bg {
+        background-image: url('../img/services/kevni-services-card-5.png');
+      }
+
+      .card-6 .content .bg {
+        background-image: url('../img/services/kevni-services-card-6.png');
+      }
+
+      .card-7 .content .bg {
+        background-image: url('../img/services/kevni-services-card-7.png');
+      }
+
+      .card-8 .content .bg {
+        background-image: url('../img/services/kevni-services-card-8.png');
+      }
+
+      .card-9 .content .bg {
+        background-image: url('../img/services/kevni-services-card-9.png');
+      }
+
+      .card-10 .content .bg {
+        background-image: url('../img/services/kevni-services-card-10.png');
+      }
+
+      .card-11 .content .bg {
+        background-image: url('../img/services/kevni-services-card-11.png');
+      }
+
+      .card-12 .content .bg {
+        background-image: url('../img/services/kevni-services-card-12.png');
+      }
+    }
+  }
+}

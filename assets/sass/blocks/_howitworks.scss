@@ -1,0 +1,116 @@
+.kevni-howitworks {
+  text-align: center;
+
+  .container {
+    padding: 0 15px 120px;
+
+    @media (max-width: $screen-1199) {
+      padding: 0 15px 80px;
+    }
+
+    @media (max-width: $screen-767) {
+      padding: 0 15px 50px;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      margin: 0 0 50px;
+    }
+  }
+
+  .items {
+    margin: 60px 0;
+    position: relative;
+
+    @media (max-width: $screen-991) {
+      flex-direction: column;
+    }
+
+    .line {
+      position: absolute;
+      width: calc(100% - 100px);
+      height: 1px;
+      background-color: $gray-4-color;
+      left: 50px;
+      top: 64px;
+
+      @media (max-width: $screen-991) {
+        display: none;
+      }
+    }
+
+    .item {
+
+      &:last-child {
+        @media (max-width: $screen-991) {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (max-width: $screen-991) {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .num {
+        height: 130px;
+        min-width: 130px;
+        max-width: 130px;
+        background-color: $gray-3-color;
+        color: $dark-1-color;
+        font: bold 30px/1 $montserrat;
+        border: 20px solid $white-color;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: $screen-991) {
+          height: 80px;
+          min-width: 80px;
+          max-width: 80px;
+          border: 0;
+          font-size: 24px;
+          margin: 0 20px 0 0;
+        }
+      }
+
+      .f-n-16 {
+        @media (max-width: $screen-991) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 auto;
+    height: 60px;
+    width: 100%;
+    max-width: 430px;
+    border: 0;
+    border-radius: 80px;
+    color: $white-color;
+    outline: none;
+    background-color: $active-color;
+    transition: $fast-transition;
+
+    &:hover {
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.17);
+    }
+
+    @media (max-width: $screen-767) {
+      font-size: 14px;
+      height: 50px;
+      width: auto;
+      padding: 0 30px;
+    }
+  }
+}

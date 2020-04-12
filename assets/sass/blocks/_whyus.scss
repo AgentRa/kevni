@@ -1,0 +1,85 @@
+.kevni-whyus {
+  background-color: $gray-3-color;
+  text-align: center;
+
+  .container {
+    padding: 120px 15px;
+
+    @media (max-width: $screen-1199) {
+      padding: 80px 15px;
+    }
+
+    @media (max-width: $screen-767) {
+      padding: 50px 15px;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+    }
+
+    .f-n-18 {
+      margin-bottom: 110px;
+
+      @media (max-width: $screen-1199) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media (max-width: $screen-991) {
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .item {
+        width: calc(20% - 20px);
+
+        &:last-child {
+          @media (max-width: $screen-991) {
+            margin-bottom: 0;
+          }
+        }
+
+        @media (max-width: $screen-991) {
+          width: 100%;
+          display: flex;
+          margin-bottom: 25px;
+        }
+
+        .image {
+          min-width: 90px;
+          max-width: 90px;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 45px;
+          border-radius: 50%;
+          border: 2px solid $gray-4-color;
+          transition: $fast-transition;
+
+          &:hover {
+            border-color: $active-color;
+            background-color: $active-color;
+          }
+
+          @media (max-width: $screen-991) {
+            margin: 0 20px 0 0;
+          }
+        }
+
+        .f-b-16 {
+          margin-bottom: 15px;
+        }
+
+        .f-n-14 {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

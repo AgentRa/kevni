@@ -1,0 +1,23 @@
+// Vars
+
+@import "vars/breakpoints";
+@import "vars/fonts";
+@import "vars/colors";
+@import "vars/typography";
+@import "vars/transitions";
+@import "vars/buttons";
+
+// Components
+
+@import "blocks/general";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/whyus";
+@import "blocks/equipment";
+@import "blocks/services";
+@import "blocks/howitworks";
+@import "blocks/certificates";
+@import "blocks/map";
+@import "blocks/request";
+@import "blocks/modal";
+@import "blocks/footer";

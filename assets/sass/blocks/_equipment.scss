@@ -1,0 +1,81 @@
+.kevni-equipment {
+  text-align: center;
+
+  .container {
+    padding: 30px 15px 80px;
+
+    h2 {
+      margin: 0 auto 30px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .item {
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        color: $white-color;
+        cursor: pointer;
+        flex: 0 0 24%;
+
+        @media (max-width: $screen-1199) {
+          flex: auto;
+          width: 50%;
+        }
+
+        @media (max-width: $screen-767) {
+          width: 100%;
+        }
+
+        &.item-1 {
+          background-image: url('../img/equipment/kevni-equipment-item-1.jpeg');
+        }
+
+        &.item-2 {
+          background-image: url('../img/equipment/kevni-equipment-item-2.jpeg');
+        }
+
+        &.item-3 {
+          background-image: url('../img/equipment/kevni-equipment-item-3.jpeg');
+        }
+
+        &.item-4 {
+          background-image: url('../img/equipment/kevni-equipment-item-4.jpeg');
+        }
+
+        .mask {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 50px 20px 30px;
+          background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.40));
+          transition: $fast-transition;
+
+          &:hover {
+            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.32));
+          }
+
+          @media (max-width: $screen-991) {
+            padding: 50px 20px 30px;
+          }
+
+          h3 {
+            margin: 0 0 60px;
+
+            @media (max-width: $screen-767) {
+              margin: 0 0 30px;
+            }
+          }
+
+          .f-n-14 {
+            margin: 0 0 30px;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
+  }
+}

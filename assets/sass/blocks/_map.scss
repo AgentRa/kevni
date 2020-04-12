@@ -1,0 +1,50 @@
+.kevni-map {
+  background-image: url('../img/map/kevni-map-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+
+    .icon {
+      background-color: $active-color;
+      border-color: $active-color !important;
+    }
+  }
+
+  a {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .container {
+    padding: 70px 15px;
+    text-align: center;
+
+    @media (max-width: $screen-767) {
+      padding: 50px 15px;
+    }
+
+    .icon-wrap {
+      width: 144px;
+      height: 144px;
+      padding: 33px;
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 50%;
+      margin: 0 auto;
+      cursor: pointer;
+
+      .icon {
+        width: 74px;
+        height: 74px;
+        border: 2px solid $white-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $fast-transition;
+      }
+    }
+  }
+}

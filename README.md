@@ -1,2 +1,2 @@
 # kevni
-kevni.by
+http://agentra.github.io/kevni

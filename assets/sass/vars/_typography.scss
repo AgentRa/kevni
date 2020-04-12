@@ -1,0 +1,119 @@
+h1 {
+  font: bold 38px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $screen-767) {
+    font-size: 26px;
+  }
+}
+
+h2 {
+  font: bold 30px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $screen-767) {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font: bold 24px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 22px;
+  }
+
+  @media (max-width: $screen-767) {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font: bold 20px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $screen-767) {
+    font-size: 16px;
+  }
+}
+
+.f-m-22 {
+  font: 500 22px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $screen-767) {
+    font-size: 16px;
+  }
+}
+
+.f-b-20 {
+  font: bold 20px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $screen-767) {
+    font-size: 16px;
+  }
+}
+
+.f-n-18 {
+  font: normal 18px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 16px;
+  }
+}
+
+.f-m-18 {
+  font: 500 18px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 16px;
+  }
+}
+
+.f-b-18 {
+  font: bold 18px/1.2 $montserrat;
+
+  @media (max-width: $screen-1199) {
+    font-size: 16px;
+  }
+}
+
+.f-n-16 {
+  font: normal 16px/1.2 $montserrat;
+}
+
+.f-m-16 {
+  font: 500 16px/1.2 $montserrat;
+}
+
+.f-b-16 {
+  font: bold 16px/1.2 $montserrat;
+}
+
+.f-n-14 {
+  font: normal 14px/1.2 $montserrat;
+}
+
+.f-m-14 {
+  font: 500 14px/1.2 $montserrat;
+}
+
+.f-b-14 {
+  font: bold 14px/1.2 $montserrat;
+}

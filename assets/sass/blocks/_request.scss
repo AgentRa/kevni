@@ -1,0 +1,98 @@
+.kevni-request {
+  background-color: $gray-3-color;
+  text-align: center;
+
+  .container {
+    background-image: url('../img/request/kevni-request-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    padding: 60px 15px;
+
+    @media (max-width: $screen-1199) {
+      background-image: none;
+    }
+
+    @media (max-width: $screen-767) {
+      padding: 50px 15px;
+    }
+
+    img {
+      width: 125px;
+    }
+
+    form {
+      max-width: 520px;
+      border-radius: 4px;
+      margin: 45px auto 65px;
+      box-shadow: -20px 54px 64px rgba(0, 0, 0, 0.15);
+
+      .form-head {
+        padding: 20px;
+        background-color: $active-color;
+
+        h4 {
+          color: $dark-1-color;
+          margin: 0;
+          line-height: 1;
+        }
+      }
+
+      .form-body {
+        padding: 20px 40px 40px 40px;
+        background-color: $white-color;
+
+        @media (max-width: $screen-767) {
+          padding: 20px 15px;
+        }
+
+        input {
+          font: normal 14px/1 $montserrat;
+          color: $gray-2-color;
+          height: 60px;
+          margin-bottom: 20px;
+          background-color: $gray-5-color;
+          border: 1px solid $white-color;
+          border-radius: 4px;
+          box-shadow: none;
+
+          &:focus {
+            border-color: $active-color;
+          }
+        }
+
+        button {
+          height: 60px;
+          width: 100%;
+          border: 0;
+          border-radius: 80px;
+          color: $white-color;
+          outline: none;
+          background-color: $active-color;
+          transition: $fast-transition;
+
+          &:hover {
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.17);
+          }
+
+          @media (max-width: $screen-767) {
+            height: 50px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .f-n-18 {
+
+      br {
+        @media (max-width: $screen-767) {
+          display: none;
+        }
+      }
+    }
+  }
+}
