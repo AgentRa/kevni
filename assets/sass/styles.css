@@ -1,0 +1,18 @@
+/* Error: Expected digit.
+ *    ,
+ * 27 |       padding: 1    .kevni-hero .container {
+ *    |                      ^
+ *    '
+ *   blocks\_hero.scss 27:22  @import
+ *   styles.scss 14:9         root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected digit.\a    \2577 \a 27 \2502        padding: 1    .kevni-hero .container {\d\a    \2502                       ^\a    \2575 \a   blocks\\_hero.scss 27:22  @import\a   styles.scss 14:9         root stylesheet";
+}

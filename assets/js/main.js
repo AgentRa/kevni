@@ -43,10 +43,17 @@ var swiper = new Swiper('.swiper-container', {
 const header = document.querySelector('header').style;
 const coll = document.getElementsByClassName('des-collapsible');
 const navbar = document.getElementById('collapsibleNavbar');
+const main = document.querySelector('main');
 
 window.addEventListener('scroll', function() {
   switch (true) {
+    case(pageYOffset === 0 ):
+      if (!!document.querySelector('.header-white')) {
+        break;
+      } header.backgroundColor = 'transparent';
+      break;
     case(pageYOffset > 0):
+      document.querySelector('main').style.overflowX = 'hidden';
       header.backgroundColor = '#F1F5F8';
       break;
     case (window.innerWidth < 1000 && pageYOffset === 0):
